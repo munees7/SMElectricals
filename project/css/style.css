@@ -452,20 +452,18 @@ select:focus-visible {
 ----------------------------------------- */
 .hero {
   background-color: var(--color-primary);
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)),
+    url('../images/home.png?v=2');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(15, 23, 42, 0.86), rgba(15, 23, 42, 0.86)),
-    url('../images/hero-electrician.svg');
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
+  display: none;
 }
 
 .hero-inner {
