@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smelectricals.vercel.app/sitemap.xml
